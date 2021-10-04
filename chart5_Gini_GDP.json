@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Gini and Inequality with GDP",
+  "title": {
+    "text": "inequality and GDP - Europe",
+    "subtitle": "DGP - Current prices (x), Gini coefficient (y)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/AndreasPetrou/AndreasPetrou.github.io/main/chart5_dataNEW.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {
+    "type": "circle",
+    "size": 150,
+    "color": "rgb(0,67,167)",
+    "opacity": 0.6
+  },
+  "height": 300,
+  "width": 300,
+  "encoding": {
+    "x": {
+      "field": "GDP - billion euros",
+      "type": "quantitative",
+      "scale": {"domain": [0, 60]},
+      "title": null
+    },
+    "y": {
+      "field": "Gini coefficient",
+      "type": "quantitative",
+      "scale": {"domain": [0, 50]},
+      "title": null
+    }
+  },
+  "config": {}
+}
