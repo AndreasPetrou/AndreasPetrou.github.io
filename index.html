@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 
-<!-- Richard Davies, Data Science 2021 -->
+<!-- Andreas Petrou, Data Science 2021 -->
 
 
 <!-- ///////////////////  HEAD //////////////////////////////////// -->
 
 <head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andreas Petrou Data Science Portfolio</title>
+
+  <link rel="stylesheet" href="index.css">
 
 <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -22,9 +29,13 @@
 
 <body>
 
-<p>Here is my first chart</p>
+  <h1>ECON30006: Data Visualisation Portfolio</h1>
+  <p><strong>Andreas Petrou | Student Number: 1813153</strong></p>
+
 
 <!--Chart 1 -->
+<h3>Covid-19 Cases</h3>
+<p>Here is my first chart. It shows the Covid-19 cases in different UK regions.</p>
   <div class="chart" id="chart1">
       <script>
         var myChart1 = "chart1_covidUKRegions.json";
@@ -33,6 +44,8 @@
   </div>
 
 <!--Chart 2 -->
+<h3>UK Productivity</h3>
+<p>My second chart shows how UK productivity changes thoughout the years.</p>
 <div class="chart" id="chart2">
     <script>
       var myChart2 = "chart2_ukProductivity.json";
@@ -41,6 +54,8 @@
 </div>
 
 <!--Chart 3 -->
+<h3>UK Beach Litter</h3>
+<p>The third chart shows the share of litter found by different brands in UK beaches.</p>
 <div class="chart" id="chart3">
   <script>
     var myChart3 = "chart3_beachlitter.json";
@@ -48,7 +63,8 @@
   </script>
 </div>
 
-<p>This chart uses API from the ONS website.</p>
+<h3>UK New Covid-19 Cases</h3>
+<p>This fourth chart uses API from the ONS website. It shows the new Covid-19 cases in the cities of Bristol and Liverpool.</p>
 <!--Chart 4 -->
 <div class="chart" id="chart4">
   <script>
@@ -57,11 +73,11 @@
   </script>
 </div>
 
-<p>This chart uses RAW.
-  
-  Countries with higher GDP are more equal.
-  By looking at the graph, we can see that in reality this is not necessarily the case.</p>
 <!--Chart 5 -->
+<h3>GDP and Gini Coefficient</h3>
+<p>This fifth chart uses RAW data. I wanted to check whether countries with high GDP have a lower 
+  inequality index than countries with lower GDP. As seen from the graph, this is not the case, since for the same Gini 
+coefficient level we have multiple GDP values.</p>
 <div class="chart" id="chart5">
   <script>
     var myChart5 = "chart5_Gini_GDP.json";
