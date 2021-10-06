@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Gini and Inequality with GDP",
   "title": {
-    "text": "inequality and GDP - Europe",
-    "subtitle": "DGP - Current prices (x), Gini coefficient (y)",
+    "text": "Inequality and GDP - Europe",
+    "subtitle": "DGP - Current prices, billion euros (x), Gini coefficient (y)",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "middle",
