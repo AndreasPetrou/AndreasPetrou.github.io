@@ -22,7 +22,7 @@
   
     "mark": {
       "type": "bar", "cornerRadiusEnd": 6, "width": 17,
-      "color": "#4bad24"},
+      "color": "#39b4918d"},
   
   "encoding": {
        "x": {
