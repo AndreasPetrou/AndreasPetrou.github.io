@@ -32,8 +32,8 @@
   <h1>ECON30006: Data Visualisation Portfolio</h1>
   <p><strong>Andreas Petrou | Student Number: 1813153</strong></p>
 
-   <div class="wrap">
-    <p class="rubric-launch">Data Science students: To see a sample project page set up, click <a class="textLink" href="project"> here</a>.</p> 
+  <div class="wrap">
+    <p class="rubric-launch">This page shows my Portfolio. To see my Project click <a class="textLink" href="project"> here</a>.</p> 
     </div>
 
 
@@ -90,14 +90,24 @@ coefficient level we have multiple GDP values.</p>
 </div>
 
 <!--Chart 6 -->
-<h3>Green Party Representations - European Parliament</h3>
-<p>This sixth chart was created using data coding written manually. The data (csv file) was downloaded 
-  from RDeconomist on Github. Then, using Vega-lite online, I recreated the chart.
-coefficient level we have multiple GDP values.</p>
+<h3>Greece's Total Population</h3>
+<p>In chart 6, I downloaded data from EUROSTAT for the years 2010-2021. Later I added the value
+  for the year 2009, as it was missing from EUROSTAT.</p>
 <div class="chart" id="chart6">
   <script>
-    var myChart6 = "chartENV19.json";
+    var myChart6 = "GreecePop.json";
     vegaEmbed('#chart6', myChart6);
+  </script>
+</div>
+
+<!--Chart 7 -->
+<h3>Green Party Representations - European Parliament</h3>
+<p>This seventh chart's data is "in-line" JSON, which I have manually written. The data (csv file) was downloaded 
+  from RDeconomist on Github. Then, using Vega-lite online, I recreated the chart.</p>
+<div class="chart" id="chart7">
+  <script>
+    var myChart7 = "chartENV19.json";
+    vegaEmbed('#chart7', myChart7);
   </script>
 </div>
 
