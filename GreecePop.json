@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/AndreasPetrou/AndreasPetrou.github.io/main/greece%20pop.csv",
+    "format": {"type": "csv", "property": "years"}
+  },
+  "title": {
+    "text": "Greece's Total Population",
+    "subtitle": "Source: EUROSTAT (2010-2021)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 8,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "mark": {
+    "type": "line",
+    "color": "#286fccde",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "grid": false,
+      "ticks": false,
+      "labelAngle": 0,
+      "title": null
+    },
+    "y": {
+      "field": "Total Population",
+      "type": "quantitative",
+      "scale": {"domain": [10400000, 11300000]},
+      "title": null
+    }
+  },
+  "config": {}
+}
