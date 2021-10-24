@@ -32,9 +32,12 @@
   <h1>ECON30006: Data Visualisation Portfolio</h1>
   <p><strong>Andreas Petrou | Student Number: 1813153</strong></p>
 
-  <div class="wrap">
-    <p class="rubric-launch">This page shows my Portfolio. To see my Project click <a class="textLink" href="project"> here</a>.</p> 
-    </div>
+  <div class="container">
+    <button class="button-56" role="button">Home</button>
+    <button class="button-56" onclick="location.href='https://andreaspetrou.github.io/project'">Project</button>
+    <button class="button-56" onclick="location.href='https://github.com/AndreasPetrou/AndreasPetrou.github.io'">Github</button>
+    <button class="button-56" onclick="location.href='https://rapidcharts.io/datascience'">Course Site</button>
+  </div>
 
 
 <!--Chart 1 -->
@@ -108,6 +111,28 @@ coefficient level we have multiple GDP values.</p>
   <script>
     var myChart7 = "chartENV19.json";
     vegaEmbed('#chart7', myChart7);
+  </script>
+</div>
+
+<!--Chart 8 -->
+<h3>Bitcoin Opening Rate</h3>
+<p>The following graph was created using an API. It shows the different crimes at the Suspension Bridge in Clifton.
+  I manipulated the API link and changed the coordinates to the location of interest.</p>
+<div class="chart" id="chart8">
+  <script>
+    var myChart8 = "chart8CRIME.json";
+    vegaEmbed('#chart8', myChart8);
+  </script>
+</div>
+
+<!--Chart 9 -->
+<h3>Bitcoin Opening Rate</h3>
+<p>This chart was created using an API key from CoinApi. I manipulated the API link and changed the period and time interval. I
+  have also chose to show the Opening Rate of BTC/USD.</p>
+<div class="chart" id="chart9">
+  <script>
+    var myChart9 = "chart9BTC.json";
+    vegaEmbed('#chart9', myChart9);
   </script>
 </div>
 
