@@ -1,0 +1,44 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+      "description": "Police Crime chart",
+  
+      "title": {
+       "text": "Crime at Clifton Suspenson Bridge",
+       "anchor": "start",
+       "color": "black",
+       "subtitle":"Recent crime by type of offence. Source: Police API.",
+       "subtitleFontStyle":"italic",
+       "subtitleFontSize":10,
+       "subtitleColor":"black"
+    },
+   
+    "data": {"url": "https://data.police.uk/api/crimes-street/all-crime?lat=51.45495523966516&lng=-2.6278683594375765"},
+    "transform": [
+      {"calculate":"1", "as":"crime"}
+    ],
+  
+    "width":300,
+    "height":300,
+      
+    "mark": {
+      "type": "arc", 
+      "innerRadius": 75},
+         
+    "encoding": {
+      
+      "theta": {
+        "aggregate": "sum",
+        "field": "crime", 
+        "type": "quantitative"},
+      
+      "color": {
+        "field": "category", 
+        "type": "nominal",
+        "scale":{"scheme":"turbo"},
+        "legend":{
+          "title":null
+        }
+      }
+    }
+  }

@@ -1,0 +1,47 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "description": "Bitcoin opening rate",
+    "title": {
+      "text": "Bitcoin opening rate (2020)",
+      "subtitle": "Data from API using personal API key; Source: CoinAPI.",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "#000000",
+      "subtitleColor": "#000000c5"
+    },
+    "data": {
+      "url": "https://rest.coinapi.io/v1/exchangerate/BTC/USD/history?period_id=1DAY&time_start=2020-01-01T00:00:00&time_end=2021-01-01T00:00:00&apikey=46AA80A0-7A86-4ADA-9895-89358DA38834"
+    },
+    "height": 300,
+    "width": 300,
+    "mark": {
+      "type": "line",
+      "point": false,
+      "interpolate": "linear",
+      "color": "#d8961a"
+    },
+    "encoding": {
+      "x": {
+        "field": "time_period_start",
+        "type": "temporal",
+        "axis": {
+          "title": null,
+          "grid": false,
+          "labelSeparation": 10,
+          "ticks": false
+        }
+      },
+      "y": {
+        "field": "rate_open",
+        "type": "quantitative",
+        "title": "",
+        "scale": {"domain": [4500, 11000]},
+        "axis": {"grid": false}
+      },
+      "tooltip": [
+        {"field": "time_period_start", "title": "Date", "type": "temporal"},
+        {"field": "rate_open", "title": "Opening rate", "format": "$,.2d"}
+      ]
+    }
+  }
