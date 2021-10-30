@@ -1,4 +1,4 @@
-﻿rank,country,currency_symbol,currency_symbol,local_price,gbp,eur,usd,Region,areaType,latitude,longitude,name,id,GDP per Capita - current USD,GDP per Capita - GBP,usd:gbp average excahnge rate 2019,GDP per capita / car price,affirtability
+﻿rank,country,currency_symbol,currency_symbol,local_price,gbp,eur,usd,Region,areaType,latitude,longitude,name,id,GDP per Capita - current USD,GDP per Capita - GBP,usd:gbp average excahnge rate 2019,GDP per capita / car price,affortability
 51,Argentina,$,"$696,000",696000,549840,604824,696000,South America,region,-38.416097,-63.616672,Argentina,32,9912.281809,7766.272797,0.7835,0.014124605,1.41
 37,Austria,‚Ç¨,"‚Ç¨279,072",279072,253956,279072,322524,Europe,region,47.516231,14.550072,Austria,40,50121.55421,39270.23773,,0.154634022,15.46
 9,Bahrain,BHD,"BHD 81,346",81346,170013,187014,215917,Asia,region,25.930414,50.637772,Bahrain,48,23443.43483,18367.93119,,0.108038392,10.80
