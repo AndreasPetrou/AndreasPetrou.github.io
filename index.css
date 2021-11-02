@@ -25,6 +25,21 @@ p{font-family: system-ui;
 color: whitesmoke;
 }
 
+div.a {
+    text-align: center;
+  }
+  
+  div.b {
+    text-align: left;
+  }
+  
+  div.c {
+    text-align: right;
+  } 
+  
+  div.d {
+    text-align: justify;
+  } 
 
 .chart{
     background-color: white;
