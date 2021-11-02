@@ -1,0 +1,49 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "US 10 Year Breakeven Inflation Rate",
+  
+     "title": {
+      "text": "US 10-Year Breakeven Inflation Rate",
+      "subtitle":"Percent, Not Seasonally Adjusted. Source: FRED",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start"},
+    
+     
+    "data": {
+        "url": "https://raw.githubusercontent.com/AndreasPetrou/AndreasPetrou.github.io/main/data_FRED-T10YIE.json",
+        "format": {"type": "json", "property": "observations"}},
+        
+    
+  
+    "height": 300,
+    "width": 300,
+    
+  
+    "mark": {
+      "type": "line",
+      "point": false,
+      "color":"#5a23db"
+    },
+  
+    
+    "encoding": {
+      
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "axis": {
+          "title": null,
+          "grid": false,
+          "labelSeparation": 10}},
+  
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": "",
+        "scale":{"domain":[0, 3]},
+        "axis": {
+          "grid": false}}     
+    }
+  }
