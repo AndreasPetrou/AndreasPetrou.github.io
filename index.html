@@ -38,114 +38,142 @@
     <button class="button-56" onclick="location.href='https://github.com/AndreasPetrou/AndreasPetrou.github.io'">Github</button>
     <button class="button-56" onclick="location.href='https://rapidcharts.io/datascience'">Course Site</button>
   </div>
+  
 </div>
 
 <!--Chart 1 -->
-<div class="a">
+<div class="b">
 <h3>Covid-19 Cases</h3></div>
 <div  class="d">
 <p>Here is my first chart. It shows the Covid-19 cases in different UK regions.</p>
+<div class="a">
   <div class="chart" id="chart1">
       <script>
         var myChart1 = "chart1_covidUKRegions.json";
         vegaEmbed('#chart1', myChart1);
       </script>
-  </div></div>
+  </div></div></div>
 
 <!--Chart 2 -->
-<h3>UK Productivity</h3>
-<p>My second chart shows how UK productivity changes thoughout the years.</p>
+<div class="b">
+<h3>UK Productivity</h3></div>
+<div class="d">
+<p>My second chart shows how UK productivity changes thoughout the years.</p></div>
+<div class="a">
 <div class="chart" id="chart2">
     <script>
       var myChart2 = "chart2_ukProductivity.json";
       vegaEmbed('#chart2', myChart2);
     </script>
-</div>
+</div></div>
 
 <!--Chart 3 -->
-<h3>UK Beach Litter</h3>
-<p>The third chart shows the share of litter found by different brands in UK beaches.</p>
+<div class="b">
+<h3>UK Beach Litter</h3></div>
+<div class="d">
+<p>The third chart shows the share of litter found by different brands in UK beaches.</p></div>
+<div class="a">
 <div class="chart" id="chart3">
   <script>
     var myChart3 = "chart3_beachlitter.json";
     vegaEmbed('#chart3', myChart3);
   </script>
-</div>
+</div></div>
 
-<h3>UK New Covid-19 Cases</h3>
-<p>This fourth chart uses API from the ONS website. It shows the new Covid-19 cases in the cities of Bristol and Liverpool.</p>
 <!--Chart 4 -->
+<div class="b">
+<h3>UK New Covid-19 Cases</h3></div>
+<div class="d">
+<p>This fourth chart uses API from the ONS website. It shows the 
+  new Covid-19 cases in the cities of Bristol and Liverpool.</p></div>
+<div class="a">
 <div class="chart" id="chart4">
   <script>
     var myChart4 = "chart4_NewCases.json";
     vegaEmbed('#chart4', myChart4);
   </script>
-</div>
+</div></div>
 
 <!--Chart 5 -->
-<h3>GDP and Gini Coefficient</h3>
+<div class="b">
+<h3>GDP and Gini Coefficient</h3></div>
+<div class="d">
 <p>This fifth chart uses RAW data. I wanted to check whether countries with high GDP have a lower 
   inequality index than countries with lower GDP. As seen from the graph, this is not the case, since for the same Gini 
-coefficient level we have multiple GDP values.</p>
+coefficient level we have multiple GDP values.</p></div>
+<div class="a">
 <div class="chart" id="chart5">
   <script>
     var myChart5 = "chart5_Gini_GDP.json";
     vegaEmbed('#chart5', myChart5);
   </script>
-</div>
+</div></div>
 
 <!--Chart 6 -->
-<h3>Greece's Total Population</h3>
+<div class="b">
+<h3>Greece's Total Population</h3></div>
+<div class="d">
 <p>In chart 6, I downloaded data from EUROSTAT for the years 2010-2021. Later I added the value
-  for the year 2009, as it was missing from EUROSTAT.</p>
+  for the year 2009, as it was missing from EUROSTAT.</p></div>
+  <div class="a">
 <div class="chart" id="chart6">
   <script>
     var myChart6 = "GreecePop.json";
     vegaEmbed('#chart6', myChart6);
   </script>
-</div>
+</div></div>
 
 <!--Chart 7 -->
-<h3>Green Party Representations - European Parliament</h3>
+<div class="b">
+<h3>Green Party Representations - European Parliament</h3></div>
+<div class="d">
 <p>This seventh chart's data is "in-line" JSON, which I have manually written. The data (csv file) was downloaded 
-  from RDeconomist on Github. Then, using Vega-lite online, I recreated the chart.</p>
+  from RDeconomist on Github. Then, using Vega-lite online, I recreated the chart.</p></div>
+  <div class="a">
 <div class="chart" id="chart7">
   <script>
     var myChart7 = "chartENV19.json";
     vegaEmbed('#chart7', myChart7);
   </script>
-</div>
+</div></div>
 
 <!--Chart 8 -->
-<h3>Bitcoin Opening Rate</h3>
+<div class="b">
+<h3>Bitcoin Opening Rate</h3></div>
+<div class="d">
 <p>The following graph was created using an API. It shows the different crimes at the Suspension Bridge in Clifton.
-  I manipulated the API link and changed the coordinates to the location of interest.</p>
+  I manipulated the API link and changed the coordinates to the location of interest.</p></div>
+  <div class="a">
 <div class="chart" id="chart8">
   <script>
     var myChart8 = "chart8CRIME.json";
     vegaEmbed('#chart8', myChart8);
   </script>
-</div>
+</div></div>
 
 <!--Chart 9 -->
-<h3>Bitcoin Opening Rate</h3>
+<div class="b">
+<h3>Bitcoin Opening Rate</h3></div>
+<div class="d">
 <p>This chart was created using an API key from CoinApi. I manipulated the API link and changed the period and time interval. I
-  have also chose to show the Opening Rate of BTC/USD.</p>
+  have also chose to show the Opening Rate of BTC/USD.</p></div>
+  <div class="a">
 <div class="chart" id="chart9">
   <script>
     var myChart9 = "chart9BTC.json";
     vegaEmbed('#chart9', myChart9);
   </script>
-</div>
+</div></div>
 
 <div class="d"><p><strong>The Following section (Week 5) shows 4 charts that have been
   chreated using API from FRED. I created a loop using Google Collab, to make 4 calls to the API,
   returning 4 data files that I saved locally. I then uploaded the data files to GitHub.
 </strong></p></div>
+
 <!--Chart 10 -->
-<div class="a">
+<div class="b">
   <h3>US Gross Domestic Product</h3></div>
-  <div  class="d">
+  <div  class="a">
     <div class="chart" id="chart10">
         <script>
           var myChart10 = "chart10_GDP.json";
@@ -154,9 +182,9 @@ coefficient level we have multiple GDP values.</p>
     </div></div>
 
     <!--Chart 11 -->
-<div class="a">
+<div class="b">
   <h3>US GINI Index</h3></div>
-  <div  class="d">
+  <div  class="a">
     <div class="chart" id="chart11">
         <script>
           var myChart11 = "chart11_GINI.json";
@@ -165,9 +193,9 @@ coefficient level we have multiple GDP values.</p>
     </div></div>
 
     <!--Chart 12 -->
-<div class="a">
+<div class="b">
   <h3>US Inflation Rate</h3></div>
-  <div  class="d">
+  <div  class="a">
     <div class="chart" id="chart12">
         <script>
           var myChart12 = "chart12_Inflation.json";
@@ -176,13 +204,29 @@ coefficient level we have multiple GDP values.</p>
     </div></div>
 
     <!--Chart 13 -->
-<div class="a">
+<div class="b">
   <h3>US Unemployment Rate</h3></div>
-  <div  class="d">
+  <div  class="a">
     <div class="chart" id="chart13">
         <script>
           var myChart13 = "chart13_Unemployment.json";
           vegaEmbed('#chart13', myChart13);
+        </script>
+    </div></div>
+
+     <!--Chart 14 -->
+<div class="b">
+  <h3>Crime and Safety Index</h3></div>
+  <div class="d">
+    <p>This chart was created by scraping data from a website using Google Collab. Then i created
+      this layered line chart using Vega-Lite.
+    </p>    
+  </div>
+  <div  class="a">
+    <div class="chart" id="chart14">
+        <script>
+          var myChart14 = "hw7.json";
+          vegaEmbed('#chart14', myChart14);
         </script>
     </div></div>
 
