@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Number of women and men that have been furloughed because of COVID-19",
+    "subtitle": "Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/AndreasPetrou/AndreasPetrou.github.io/main/furlough_data.csv"
+  },
+  "repeat": {"layer": ["Female", "Male"]},
+  "spec": {
+    "mark": "line",
+    "encoding": {
+      "x": {"bin": false, "field": "Date", "type": "temporal", "title": null},
+      "y": {
+        "field": {"repeat": "layer"},
+        "type": "quantitative",
+        "title": null,
+        "scale": {"domain": [1000000, 3000000]}
+      },
+      "color": {
+        "datum": {"repeat": "layer"},
+        "type": "nominal",
+        "scale": {"range": ["#9b0a23", "#1357b1"]}
+      }
+    }
+  },
+  "config": {}
+}
