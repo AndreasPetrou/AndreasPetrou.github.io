@@ -1,0 +1,53 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+      "title": {
+      "text": "World GDP Growth",
+      "subtitle": "Source: World Bank ",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+    "data": {"url": "https://raw.githubusercontent.com/AndreasPetrou/AndreasPetrou.github.io/main/GDP_growth.csv"},
+    "vconcat": [{
+      "width": 480,
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal",
+          "scale": {"domain": {"param": "brush"}},
+          "axis": {"title": ""}
+        },
+        "y": {"field": "GDP Growth ", "type": "quantitative"}
+      }
+    }, {
+      "width": 480,
+      "height": 60,
+      "mark": "line",
+  
+  
+      "transform": [
+      {"calculate": "year(datum.Year)", "as": "year"}
+    ],
+  
+      "params": [{
+        "name": "brush",
+        "select": {"type": "interval", "encodings": ["x"]}
+      }],
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "GDP Growth ",
+          "type": "quantitative",
+          "axis": {"tickCount": 3, "grid": false}
+        }
+      }
+    }]
+  }
+  
