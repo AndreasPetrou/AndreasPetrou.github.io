@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/AndreasPetrou/AndreasPetrou.github.io/main/topojson_export.json",
+    "format": {"type": "topojson", "feature": "countries1"}
+  },
+  "projection": {"type": "equirectangular"},
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "field": "properties.gbp",
+      "type": "quantitative",
+      "title": "Average Price (GBP)"
+    },
+    "tooltip": [
+      {"field": "id", "type": "ordinal", "title": "Country"},
+      {"field": "properties.gbp", "type": "quantitative", "title": "Price"}
+    ]
+  },
+  "config": {"background": "white"}
+}
