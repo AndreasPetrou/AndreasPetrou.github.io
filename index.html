@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Andreas Petrou Data Science Portfolio</title>
 
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index1.css">
 
 <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
@@ -30,7 +30,7 @@
 <body>
 <div class="a">
   <h1>ECON30006: Data Visualisation Portfolio</h1>
-  <p><strong>Andreas Petrou | Student Number: 1813153</strong></p>
+  <h3><strong>Andreas Petrou | Student Number: 1813153</strong></h3>
 
   <div class="container">
     <button class="button-56" role="button">Home</button>
@@ -41,95 +41,113 @@
   
 </div>
 
+<!--///////////////////////////////////////Week 1////////////////////////////////////////////-->
+
+<h2>Week 1: Embedding</h2>
+<p>Embed three charts, two that are given to you in class. One taken from rapidchart repository.</p>
+<p>Chart one and two were given and i just embeded them. Chart 3 was found from RapidChart website.</p>
 <!--Chart 1 -->
-<div class="b">
-<h3>Covid-19 Cases</h3></div>
-<div  class="d">
-<p>Here is my first chart. It shows the Covid-19 cases in different UK regions.</p>
+<div class="box">
 <div class="a">
+  <p><strong>Covid-19 Cases</strong></p></div>
   <div class="chart" id="chart1">
       <script>
         var myChart1 = "chart1_covidUKRegions.json";
         vegaEmbed('#chart1', myChart1);
       </script>
-  </div></div></div>
+  </div>
+</div>
 
 <!--Chart 2 -->
-<div class="b">
-<h3>UK Productivity</h3></div>
-<div class="d">
-<p>My second chart shows how UK productivity changes thoughout the years.</p></div>
+<div class="box">
 <div class="a">
+  <p><strong>UK Productivity</strong></p></div>
 <div class="chart" id="chart2">
     <script>
       var myChart2 = "chart2_ukProductivity.json";
       vegaEmbed('#chart2', myChart2);
     </script>
-</div></div>
+  </div>
+</div>
 
 <!--Chart 3 -->
-<div class="b">
-<h3>UK Beach Litter</h3></div>
-<div class="d">
-<p>The third chart shows the share of litter found by different brands in UK beaches.</p></div>
+<div class="box">
 <div class="a">
+  <p><strong>UK Beach Litter</strong></p></div>
 <div class="chart" id="chart3">
   <script>
     var myChart3 = "chart3_beachlitter.json";
     vegaEmbed('#chart3', myChart3);
   </script>
-</div></div>
+  </div>
+</div>
 
+<!--///////////////////////////////////////Week 2////////////////////////////////////////////-->
+
+<h2>Week 2: Hosting Data</h2>
+<p>Embed two charts of your own design, one from a given API and one from the same/related data saved to your GitHub.</p>
 <!--Chart 4 -->
-<div class="b">
-<h3>UK New Covid-19 Cases</h3></div>
+<div class="box">
+  <div class="a">
+    <p><strong>UK New Covid-19 Cases</strong></p>
+  </div>
 <div class="d">
-<p>This fourth chart uses API from the ONS website. It shows the 
-  new Covid-19 cases in the cities of Bristol and Liverpool.</p></div>
-<div class="a">
+  <p>Chart one uses API from the ONS website. <br>
+  It shows the new Covid-19 cases in the cities of Bristol and Liverpool.</p></div>
 <div class="chart" id="chart4">
   <script>
     var myChart4 = "chart4_NewCases.json";
     vegaEmbed('#chart4', myChart4);
   </script>
-</div></div>
+</div>
+</div>
 
 <!--Chart 5 -->
-<div class="b">
-<h3>GDP and Gini Coefficient</h3></div>
-<div class="d">
-<p>This fifth chart uses RAW data. I wanted to check whether countries with high GDP have a lower 
-  inequality index than countries with lower GDP. As seen from the graph, this is not the case, since for the same Gini 
-coefficient level we have multiple GDP values.</p></div>
+<div class="box">
 <div class="a">
+  <p><strong>GDP and Gini Coefficient</strong></p>
+</div>
+<div class="d">
+  <p>Chart two uses RAW data. <br>
+    I wanted to check whether countries with high GDP have a lower inequality index than
+  countries with lower GDP. As seen from the graph, this is not the case, since for the same Gini coefficient
+  level we have multiple GDP values.</p></div>
 <div class="chart" id="chart5">
   <script>
     var myChart5 = "chart5_Gini_GDP.json";
     vegaEmbed('#chart5', myChart5);
   </script>
-</div></div>
+  </div>
+</div>
 
+<!--///////////////////////////////////////Week 3////////////////////////////////////////////-->
+
+<h2>Week 3: Editing data, writing JSON by hand</h2>
+<p>Embed two charts, one where the data is "in-line" JSON, and one where the data has been changed.</p>
 <!--Chart 6 -->
-<div class="b">
-<h3>Greece's Total Population</h3></div>
+<div class="box">
+<div class="a">
+<p><strong>Greece's Total Population</strong></p>
+</div>
 <div class="d">
-<p>In chart 6, I downloaded data from EUROSTAT for the years 2010-2021. Later I added the value
+<p>I downloaded data from EUROSTAT for the years 2010-2021. Later I added the value
   for the year 2009, as it was missing from EUROSTAT.</p></div>
-  <div class="a">
 <div class="chart" id="chart6">
   <script>
     var myChart6 = "GreecePop.json";
     vegaEmbed('#chart6', myChart6);
   </script>
-</div></div>
+  </div>
+</div>
 
 <!--Chart 7 -->
-<div class="b">
-<h3>Green Party Representations - European Parliament</h3></div>
-<div class="d">
-<p>This seventh chart's data is "in-line" JSON, which I have manually written. The data (csv file) was downloaded 
-  from RDeconomist on Github. Then, using Vega-lite online, I recreated the chart.</p></div>
+<div class="box">
   <div class="a">
+    <p><strong>Green Party Representations - European Parliament</strong></p>
+  </div>
+  <div class="d">
+<p>This chart's data is "in-line" JSON, which I have manually written. The data (csv file) was downloaded 
+  from RDeconomist on Github. Then, using Vega-lite online, I recreated the chart.</p></div>
 <div class="chart" id="chart7">
   <script>
     var myChart7 = "chartENV19.json";
@@ -137,13 +155,18 @@ coefficient level we have multiple GDP values.</p></div>
   </script>
 </div></div>
 
+<!--///////////////////////////////////////Week 4////////////////////////////////////////////-->
+
+<h2>Week 4: API driven charts</h2>
+<p>Embed two charts of your own design from two separate APIs that you sign up for & gain access to.</p>
 <!--Chart 8 -->
-<div class="b">
-<h3>Bitcoin Opening Rate</h3></div>
-<div class="d">
-<p>The following graph was created using an API. It shows the different crimes at the Suspension Bridge in Clifton.
-  I manipulated the API link and changed the coordinates to the location of interest.</p></div>
+<div class="box">
   <div class="a">
+    <p><strong>Crime Rate</strong></p>
+  </div>
+  <div class="d">
+<p>The following graph was created using an API. It shows the different crimes at the Suspension Bridge in Clifton. 
+  I manipulated the API link and changed the coordinates to the location of interest.</p></div>
 <div class="chart" id="chart8">
   <script>
     var myChart8 = "chart8CRIME.json";
@@ -152,12 +175,13 @@ coefficient level we have multiple GDP values.</p></div>
 </div></div>
 
 <!--Chart 9 -->
-<div class="b">
-<h3>Bitcoin Opening Rate</h3></div>
-<div class="d">
+<div class="box">
+  <div class="a">
+    <p><strong>Bitcoin Opening Rate</strong></p>
+  </div>
+  <div class="d">
 <p>This chart was created using an API key from CoinApi. I manipulated the API link and changed the period and time interval. I
   have also chose to show the Opening Rate of BTC/USD.</p></div>
-  <div class="a">
 <div class="chart" id="chart9">
   <script>
     var myChart9 = "chart9BTC.json";
@@ -165,122 +189,183 @@ coefficient level we have multiple GDP values.</p></div>
   </script>
 </div></div>
 
-<div class="d"><p><strong>The Following section (Week 5) shows 4 charts that have been
-  chreated using API from FRED. I created a loop using Google Collab, to make 4 calls to the API,
-  returning 4 data files that I saved locally. I then uploaded the data files to GitHub.
-</strong></p></div>
+<!--///////////////////////////////////////Week 5////////////////////////////////////////////-->
+
+<h2>Week 5: Loops and APIs</h2>
+<p>Download code from an API using fetch in Python/Colab and chart this. Use a loop to batch download data.</p>
+
+<p>The Following section shows 4 charts that have been chreated using API from FRED. <br>
+  I created a loop using Google Collab, to make 4 calls to the API, returning 4 data files <br>
+  that I saved locally. I then uploaded the data files to GitHub. The Google Colab file can <br>
+  be found <a href="https://github.com/AndreasPetrou/AndreasPetrou.github.io/blob/main/Loops_and_APIs.ipynb">here</a>.
+</p>
 
 <!--Chart 10 -->
-<div class="b">
-  <h3>US Gross Domestic Product</h3></div>
-  <div  class="a">
+<div class="box">
+  <div class="a">
+    <p><strong>US Gross Domestic Product</strong></p>
+  </div>
     <div class="chart" id="chart10">
         <script>
           var myChart10 = "chart10_GDP.json";
           vegaEmbed('#chart10', myChart10);
         </script>
-    </div></div>
+    </div>
+  </div>
 
     <!--Chart 11 -->
-<div class="b">
-  <h3>US GINI Index</h3></div>
-  <div  class="a">
+<div class="box">
+  <div class="a">
+    <p><strong>US GINI Index</strong></p>
+  </div>
     <div class="chart" id="chart11">
         <script>
           var myChart11 = "chart11_GINI.json";
           vegaEmbed('#chart11', myChart11);
         </script>
-    </div></div>
+    </div>
+  </div>
+
+  <br>
 
     <!--Chart 12 -->
-<div class="b">
-  <h3>US Inflation Rate</h3></div>
-  <div  class="a">
+<div class="box">
+  <div class="a">
+    <p><strong>US Inflation Rate</strong></p>
+  </div>
     <div class="chart" id="chart12">
         <script>
           var myChart12 = "chart12_Inflation.json";
           vegaEmbed('#chart12', myChart12);
         </script>
-    </div></div>
+    </div>
+  </div>
 
     <!--Chart 13 -->
-<div class="b">
-  <h3>US Unemployment Rate</h3></div>
-  <div  class="a">
-    <div class="chart" id="chart13">
+  <div class="box">
+    <div class="a">
+      <p><strong>US Unemployment Rate</strong></p>
+    </div>
+  <div class="chart" id="chart13">
         <script>
           var myChart13 = "chart13_Unemployment.json";
           vegaEmbed('#chart13', myChart13);
         </script>
-    </div></div>
+    </div>
+  </div>
+
+<!--///////////////////////////////////////Week 7////////////////////////////////////////////-->
+
+<h2>Week 7: Loops and scrapers</h2>
+<p>Build a scraper in Colab, save and chart the results.</p>
 
      <!--Chart 14 -->
-<div class="b">
-  <h3>Crime and Safety Index</h3></div>
+<div class="box">
+  <div class="a">
+    <p><strong>Crime and Safety Index</strong></p>
+  </div>
   <div class="d">
     <p>This chart was created by scraping data from a website using Google Collab. Then i created
-      this layered line chart using Vega-Lite.
+      this layered line chart using Vega-Lite. Click
+       <a href="https://github.com/AndreasPetrou/AndreasPetrou.github.io/blob/main/scraperHW.ipynb">here</a>
+       for the Google Colab Notebook.
     </p>    
   </div>
-  <div  class="a">
     <div class="chart" id="chart14">
         <script>
           var myChart14 = "hw7.json";
           vegaEmbed('#chart14', myChart14);
         </script>
-    </div></div>
+    </div>
+  </div>
+
+<!--///////////////////////////////////////Week 8////////////////////////////////////////////-->
+
+<h2>Week 8: Data Stories</h2>
+<p>Attend one (or more) mornings of Talking Economics. <br>
+  After this construct a chart that would (a) support or (b) refute an argument that is made there.</p>
 
     <!--Chart 15 -->
-<div class="b">
-  <h3>Number of people furloughed by sex in the UK</h3></div>
-  <div class="d">
-    <p>The data was downloaded from ONS. This chart aims to prove or disprove a statement made at the 
-      "Talking Economics" conference carried out at We The Curious, Bristol on the 18th of Nov 2021.</p>
-        
-    <P>Statement: "This recession has been very different. Usually, recessions are worse for men. 
-      In this recession it hit women worse; more chose to follow a furlough scheme.
-    By: Sarah Smith</P>
+  <div class="a">
+    <p><strong>Number of people furloughed by sex in the UK</strong></p>
+  </div>
+
+  <div class="a">
+    <P>Statement: "This recession has been very different. Usually, recessions are worse for men. <br>
+      In this recession it hit women worse; more chose to follow a furlough scheme. <br>
+    By: Sarah Smith (18th November 2021)</P>
 
     <p>Looking at the chart below, we can clearly see that more women chose to be furloughed
-      than men. This is consisent throught the period the furlough scheme has been active.
+      than men. <br> This is consisent throught the period the furlough scheme has been active. <br>
       Note: data for Dec 2020 onwards are provisional.
     </p>
   </div>
-  <div  class="a">
+
+<div class="box">
+  
     <div class="chart" id="chart15">
         <script>
           var myChart15 = "furlough.json";
           vegaEmbed('#chart15', myChart15);
         </script>
-    </div></div>
+    </div>
+  </div>
 
-    <!--Chart 16 -->
-<div class="b">
-  <h3>World Population Growth</h3></div>
+<!--///////////////////////////////////////Week 9////////////////////////////////////////////-->
+
+<h2>Week 9: Advanced analytics</h2>
+<p>Build a chart with data from two separate sources. Plot these data using correlation, <br>
+  regression or some other technique. Build and embed a chart that uses advanced statistical <br>
+  methods, testing causality or distribution.</p>
+
+    <!--Chart 16-->
+    <div class="box">
+      <div class="a">
+        <p><strong>COVID-19: Cases and Vaccines</strong></p>
+      </div>
+      <p>The following graph was creased using Python. The Colab Notebook can be 
+        found <a href="https://github.com/AndreasPetrou/AndreasPetrou.github.io/blob/main/Regression.ipynb">here</a>.
+      </p></div>
+        <div class="a">
+        <img src = "Regression.png" />
+    </div>
+
+<!--///////////////////////////////////////Week 10////////////////////////////////////////////-->
+
+<h2>Week 10: Interactivity</h2>
+<p>Build and embed two interactive charts.</p>
+
+    <!--Chart 17 -->
+<div class="box">
+  <div class="a">
+    <p><strong>World Population Growth</strong></p>
+  </div>
   <div class="d">
   <p>The following interactive graph uses data from the Wolrd Bank to show the Annual Percentage chance of the
      World's Population. </p></div>
-    <div class="a">
-  <div class="chart" id="chart16">
+  <div class="chart" id="chart17">
     <script>
-      var myChart16 = "hw10a.json";
-      vegaEmbed('#chart16', myChart16);
+      var myChart17 = "hw10a.json";
+      vegaEmbed('#chart17', myChart17);
     </script>
-  </div></div>
+  </div>
+</div>
 
-    <!--Chart 17 -->
-    <div class="b">
-      <h3>World GDP Growth</h3></div>
+  <!--Chart 18 -->
+  <div class="box">
+    <div class="a">
+      <p><strong>World GDP Growth</strong></p>
+    </div>
       <div class="d">
       <p>The following interactive brush (overview and detail) graph uses data from the Wolrd Bank to show the 
         Annual Percentage chance of the World's GDP. </p></div>
-        <div class="a">
-      <div class="chart" id="chart17">
-        <script>
-          var myChart17 = "hw10b.json";
-          vegaEmbed('#chart17', myChart17);
-        </script>
-      </div></div>
+   <div class="chart" id="chart18">
+      <script>
+        var myChart18 = "hw10b.json";
+        vegaEmbed('#chart18', myChart18);
+      </script>
+    </div>
+  </div>
 
 </body>
 <!-- ///////////////////  END BODY //////////////////////////////////// -->
