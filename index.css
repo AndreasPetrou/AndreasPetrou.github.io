@@ -1,17 +1,15 @@
 
-/* This is my first proper css file */
-
 body{
-    background-color: #f7ddc0dc;
-    max-width: auto;
-    margin: auto;
-    text-align: center;
-    width: 100%;
+  background-color: #f7ddc0dc;
+  max-width: auto;
+  margin: auto;
+  text-align: center;
+  width: 100%;
 }
 
 h1, h2, h3, p{
-    color: #2e2f2f;
-    font-family: system-ui;
+  color: #2e2f2f;
+  font-family: system-ui;
 }
 
 h1{font-size:60px;}
@@ -20,100 +18,377 @@ h3{font-size:30px}
 p{font-size:20px}
 
 .box {
-	
-    box-sizing: border-box;
-    background-color: none;
-    width: auto;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    display: inline-block;
-    margin: 10px;
-    max-width: 500px;
-      
-  }
 
-  
+  box-sizing: border-box;
+  background-color: none;
+  width: auto;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+  max-width: 500px;
+    
+}
+
+
 .chart{
-    background-color: #f7ddc0dc;
-    width: auto;
-    margin: auto;
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: #f7ddc0dc;
+  background-color: #f7ddc0dc;
+  width: auto;
+  margin: auto;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #f7ddc0dc;
 }
 
 div.a {
-    text-align: center;
-  }
-  
-  div.b {
-    text-align: left;
-  }
-  
-  div.c {
-    text-align: right;
-  } 
-  
-  div.d {
-    text-align: justify;
-  } 
+  text-align: center;
+}
+
+div.b {
+  text-align: left;
+}
+
+div.c {
+  text-align: right;
+} 
+
+div.d {
+  text-align: justify;
+} 
 
 /* Button Format */
 .button-56 {
-    align-items: center;
-    margin: 10px;
-    background-color: rgb(105, 62, 47);
-    border: 2px solid #111;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #111;
-    font-family: system-ui;
-    font-size: 16px;
-    height: 48px;
-    justify-content: center;
-    line-height: 24px;
-    max-width: 100%;
-    padding: 0 25px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    }
+  align-items: center;
+  margin: 10px;
+  background-color: rgb(105, 62, 47);
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  font-family: system-ui;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  }
 
 .button-56:after {
-    background-color: #111;
-    border-radius: 8px;
-    content: "";
-    display: block;
-    height: 48px;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: -2px;
-    transform: translate(8px, 8px);
-    transition: transform .2s ease-out;
-    z-index: -1;
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
 }
 
 .button-56:hover:after {
-    transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 .button-56:active {
-    background-color: rgb(109, 53, 35);
-    outline: 0;
+  background-color: rgb(109, 53, 35);
+  outline: 0;
 }
 
-    .button-56:hover {
-    outline: 0;
+  .button-56:hover {
+  outline: 0;
 }
 
 @media (min-width: 768px) {
-    .button-56 {
-    padding: 0 40px;
+  .button-56 {
+  padding: 0 40px;
+}
+}
+
+
+.chart:hover {
+  transform: scale(1.04, 1.04);
+  transition: 0.6s;
+  
+}
+
+/* loader */
+@-webkit-keyframes edit {
+  0% {
+    -webkit-transform: rotate(-12deg);
+    transform: rotate(-12deg);
   }
+
+  8% {
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+
+  10% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  18% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  20% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  28% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  30% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  38% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  40% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  48% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  58% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  60% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  68% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes edit {
+  0% {
+    -webkit-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+
+  8% {
+    -webkit-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+
+  10% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  18% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  20% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  28% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  30% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  38% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  40% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  48% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  58% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  60% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  68% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+.faa-edit.animated,
+.faa-edit.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-edit {
+  -webkit-animation: edit 5s ease infinite;
+  animation: edit 5s ease infinite;
+}
+
+.faa-github.animated,
+.faa-github.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-github {
+  -webkit-animation: edit 5s ease infinite;
+  animation: edit 5s ease infinite;
+}
+
+.faa-book.animated,
+.faa-book.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-book {
+  -webkit-animation: edit 5s ease infinite;
+  animation: edit 5s ease infinite;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+}
+
+#one {
+  position: absolute;
+  border-radius: 50%;
+  background: #FFFFFF;
+  opacity: .0;
+  animation: loading 1.4s .65s infinite;
+  height: 20px;
+  width: 20px;
+}
+
+#two {
+  position: absolute;
+  border-radius: 50%;
+  background: #f7ac58dc;
+  opacity: .0;
+  animation: loading 1.4s infinite;
+  height: 20px;
+  width: 20px;
+}
+
+
+@keyframes loading {
+  0% {
+    opacity: .0;
+    transform: scale(.15);
+    box-shadow: 0 0 2px rgba(black, .1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(2);
+    box-shadow: 0 0 10px rgba(black, .1);
+  }
+  100% {
+    opacity: .0;
+    transform: scale(.15);
+    box-shadow: 0 0 2px rgba(black, .1);
+  }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+#loadermessage {
+  position: absolute;
+  text-align: center !important;
+  top: 60% !important;
+  left: 46%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(3, 2, 0);
+  font-size: 20px; 
+  letter-spacing: 1px; 
+  line-height: 1; 
+}
+
+@media only screen and (max-width: 800px) {
+.chart {
+width: 400px;
+overflow:scroll;
+}
+#loadermessage {
+  left:40% !important;
+}
 }
