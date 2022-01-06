@@ -1,28 +1,47 @@
 
-
-
-
 /* This is my first proper css file */
 
 body{
-    background-color: burlywood;
-    max-width: 450px;
+    background-color: #f7ddc0dc;
+    max-width: auto;
     margin: auto;
+    text-align: center;
+    width: 100%;
 }
 
-h1{
-
-    color: rgb(0, 0, 0);
+h1, h2, h3, p{
+    color: #2e2f2f;
     font-family: system-ui;
 }
 
-h3{
-    color: rgb(109, 53, 35);
-    font-family: system-ui;
-}
+h1{font-size:60px;}
+h2{font-size:45px}
+h3{font-size:30px}
+p{font-size:20px}
 
-p{font-family: system-ui;
-color: whitesmoke;
+.box {
+	
+    box-sizing: border-box;
+    background-color: none;
+    width: auto;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    max-width: 500px;
+      
+  }
+
+  
+.chart{
+    background-color: #f7ddc0dc;
+    width: auto;
+    margin: auto;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #f7ddc0dc;
 }
 
 div.a {
@@ -41,27 +60,11 @@ div.a {
     text-align: justify;
   } 
 
-.chart{
-    background-color: white;
-    width:auto;
-    height: auto;
-    margin: auto;
-    padding: 5pt;
-    align-items: center;
-    justify-content: center;  
-    border-width: 1px;
-    border-style: solid;
-    border-radius: auto;
-    border-color: rgb(0, 0, 0);
-    
-}
-
-
 /* Button Format */
 .button-56 {
     align-items: center;
     margin: 10px;
-    background-color: rgb(109, 53, 35);
+    background-color: rgb(105, 62, 47);
     border: 2px solid #111;
     border-radius: 8px;
     box-sizing: border-box;
@@ -113,6 +116,4 @@ div.a {
     .button-56 {
     padding: 0 40px;
   }
-
 }
-
