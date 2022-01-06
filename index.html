@@ -19,14 +19,59 @@
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 
- <!--Favicon-->
+
+<!--Favicon-->
 <link rel="icon" href="icon.png">
 
-  
+
 </head>
 
 <!-- ///////////////////  HEAD //////////////////////////////////// -->
 
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+  margin: 0;
+  text-align: center !important;
+}
+
+</style>
+
+<div id="loader">
+  <div id="one"></div>
+  <div id="two"></div>
+</div>
+
+<div id="loadermessage">Loading...</div>
+    
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+  <script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("loadermessage").style.display = "none";  
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+
+
+
+<body>
 
 
 <!-- ///////////////////  START BODY //////////////////////////////////// -->
