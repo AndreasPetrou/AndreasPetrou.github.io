@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Coronavirus cases",
+  "data": {
+    "url": "https://raw.githubusercontent.com/AndreasPetrou/AndreasPetrou.github.io/main/data_final.csv",
+    "format": {"type": "csv"}
+  },
+  "title": {
+    "text": "The price of a Porsche 911 Turbo S Vs. Local Wages",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 500,
+  "mark": {"type": "bar", "width": 10},
+  "selection": {
+    "Region": {
+      "type": "single",
+      "fields": ["Region"],
+      "bind": {
+        "input": "select",
+        "options": [null, "Europe", "Asia", "North America", "South America"],
+        "name": "Continent"
+      }
+    }
+  },
+  "transform": [{"filter": {"selection": "Region"}}],
+  "encoding": {
+    "x": {
+      "field": "country",
+      "type": "ordinal",
+      "title": null,
+      "sort": {"op": "sum", "field": "Car Price / GNI per capita"}
+    },
+    "y": {"field": "Car Price / GNI per capita", "type": "quantitative", "title": null},
+    "color": {
+      "field": "Car Price / GNI per capita",
+      "type": "quantitative",
+      "legend": null,
+      "scale": {"scheme": "yelloworangered"}
+    },
+    "tooltip":[
+    {"field":"country", "title":"Country"},
+    {"field":"Car Price / GNI per capita", "title":"Affortability", "type": "quantitative"}
+  ]
+  },
+  "config": {}
+}
