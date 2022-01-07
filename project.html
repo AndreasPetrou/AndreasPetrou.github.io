@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Andreas Petrou, Data Science 2021 -->
+
+
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
     
 <head>
     <meta charset="UTF-8">
@@ -7,26 +12,267 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CM DataViz Project Demo Page</title>
 
-    <link rel="stylesheet" href= "index.css">
+    <link rel="stylesheet" href= "project.css">
     
    <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
    </style> 
 
-        <!--The next three lines allow the Vega embed-->
-<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+
+<!--Favicon-->
+<link rel="icon" href="icon.png">
 
 </head>
 
-<body>
-    <h1>DATA SCIENCE PROJECT</h1>
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
 
-    <h3>Andreas Petrou | Student Number: 1813153</h3>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+  margin: 0;
+  text-align: center !important;
+}
+
+</style>
+
+<div id="loader">
+  <div id="one"></div>
+  <div id="two"></div>
+</div>
+
+<div id="loadermessage">Loading...</div>
     
-    <p>Project demo page text here.</p>
-  
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+  <script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("loadermessage").style.display = "none";  
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+
+
+<body>
+
+
+<!-- ///////////////////  START BODY //////////////////////////////////// -->
+
+<body>
+    <div class="a">
+    <h1>Andreas Petrou: Data Science Project</h1>
+
+    <div class="container">
+      <button class="button-56" onclick="location.href='https://andreaspetrou.github.io'">Portfolio</button>
+      <button class="button-56" onclick="location.href='https://github.com/AndreasPetrou/AndreasPetrou.github.io'">Github</button>
+      <button class="button-56" onclick="location.href='https://rapidcharts.io/datascience'">Course Site</button>
+    </div>
+
+    <h2>PORSCHE 911 TURBO S - WORLDWIDE INDEX</h2></div>
+    
+    <div class="box">
+    <div class="d">
+    <p>The aim of this project is to see <strong>how the price of the same car differs around the world</strong> (2019).
+        The data has been scrapped from Comparethemarket.com and was later manipulated in Excel.
+    Data for GDP per capita was sourced from the World Bank. </p>
+<!--
+<p>First let us have a look at the three countries where this supercar is the most <strong>expensive</strong> and 
+  the <strong>cheapest</strong>.</p>
+
+
+  <div class="container">
+    <button class="button-56" role="button">Cheapest Countries</button>
+    <button class="button-56" role="button">Most Expensive Countries</button>
+  </div>
+
+  <button class="button-56" onClick="toggleTable()">Cheapest Countries</button>
+  <table id="myTable" style="width:50%" class="hidden">
+    <tr>
+      <th>Rank</th>
+      <th>Country</th> 
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Canada</td> 
+      <td>£136,703</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Mexico</td> 
+      <td>£139,930</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>United Kingdom</td> 
+      <td>£155,970</td>
+    </tr>
+
+  </table>
+  -->
+
+<p>Let's have a look at the price of Porsche 911 Turbo S in different countries. Through this first interactive
+    bar graph we can see in order the price in different countries. We can also change the "Region" and have a closer
+    look at a specific continent.
+</p></div>
+    </div>
+
+<!--Chart 1 -->
+<h3>Price by country - Interactive Bar Chart</h3>
+  <div class="a">
+<div class="chart" id="chart1">
+  <script>
+    var myChart1 = "interactivebarchart.json";
+    vegaEmbed('#chart1', myChart1);
+  </script>
+</div>
+</div>
+
+<div class="box">
+<div class="d">
+  <p>Now let's see what this looks like in a World Map. The following map was created
+    using Datawrapper. </p></div>
+</div>
+
+<!-- 
+The following Choropleth map was created using Python.
+    You can find
+    the Google Colab Notebook <a href="https://github.com/AndreasPetrou/AndreasPetrou.github.io/blob/main/maps.ipynb">here</a>.
+ -->
+
+
+  <!--Chart 2 -->
+<h3>Price by country - Choropleth Map</h3>
+
+<iframe title="" aria-label="Map" id="datawrapper-chart-902Xn" src="https://datawrapper.dwcdn.net/902Xn/6/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="226"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+
+<!--
+<div class="a">
+<div class="chart" id="chart2">
+  <script>
+    var myChart2 = "price_map.json";
+    vegaEmbed('#chart2', myChart2);
+  </script>
+</div>
+</div>
+-->
+
+<div class="box">
+  <div class="d">
+    <p>As seen from the above graphs, it is clear that the price of the same supercar varies around the world.
+      However, the price of this car relative to the GNI per capita in each country might tell a different story, due
+      to the different standards of living in each country.</p>
+
+      <p>I downloaded the GNI per Capita in current USD, sourced from the World Bank. Then, I converted the
+      GNI per capita to GBP, 
+      using the average exchange rate of USD to GBP in 2019 which was 0.7835. Later, I divided the local 
+      price of the car by the
+      GNI per capita of each country; this allows us to see how much of the average national annual
+      income you would need to spend to buy a Porsche 911 Turbo S at the local price. 
+    </p>
+  </div>
+
+
+<div class="d">
+  <p>We have seen from the first chart that the three cheapest countries to buy the car are: Canada, Mexico, and United Kingdom.
+    The three most expensive countries to buy the car are: Argentina, Singapore, and Vietnam.</p>
+
+   <p>However, is this really the case?</p>
+</div>  
+</div>
+
+  <!--Chart 3 -->
+<h3>Local Price Vs. Local Wage - Interactive Bar Chart</h3>
+<div class="a">
+<div class="chart" id="chart3">
+  <script>
+    var myChart3 = "GNI_price.json";
+    vegaEmbed('#chart3', myChart3);
+  </script>
+</div>
+</div>
+
+<div class="box">
+<div class="d">
+<p>Upon first inspection, we can conclude that in the end, despite price having huge differences between countries
+  it seems that the affordability of the supercar is almost the same in most countries. In Pakistan, one will need 450 
+  times his annual income to buy the car. </p>
+</div>
+
+<div class="d">
+<p>Porsche 911 Turbo S is manufactured in Germany. Hence one would expect the car to be cheaper in countries
+  found closer to Germany (e.g. European countries) and more expensive to countries farther away, due to transportation costs.
+The next graph plots Average Price against Distance from Germany using Google Colab. Click
+<a href="https://github.com/AndreasPetrou/AndreasPetrou.github.io/blob/main/regression_project.ipynb">here</a> for the Notebook. 
+The data was scrapped, and the Colab Notebook can be found 
+<a href="https://github.com/AndreasPetrou/AndreasPetrou.github.io/blob/main/Data_distance_scrapper.ipynb">here</a>.
+I have manipulated the data in STATA and the DoFile can be found 
+<a href="https://github.com/AndreasPetrou/AndreasPetrou.github.io/blob/main/merging%20data.do">here</a>.</p>
+</div>
+</div>
+
+<!--Chart 4 -->
+<h3>Regressing Average Price on Distance from Germany</h3>
+<div class="a">
+  <img src = "regression_project.png" />
+</div>
+
+<div class="box">
+<div class="d">
+  <p>The <strong>R² equals to 0.11</strong>, which explains 1.1% of the variation of the Average Price (GBP) by 
+    the Distance from Germany (km). It can be argued that distance from Germany does not play a 
+  significant impact on the price of the car since for distances in the range 7500 to 10000 we have 
+multiple values of Average Price (GBP). The cluster of points found at the far left of the graph 
+represent European countries, as they are found closer to Germany, and it can be observed
+that they all have similar prices. A possible explanation could be minimal transportation costs
+and all, including Germany, being members of the European Union, which means minimal to zero import tariffs.</p>
+</div>
+</div>
+
+<h3>Conclusion and Limitations</h3>
+<div class="box">
+  <div class="d">
+  <p>In general, it can be agreed that the price of this supercar varies around the world. The price varies
+    less in Europe, but it is generally cheaper in Asia. Also, it is more affordable in Asia with the exceptions
+    of Vietnam and Pakistan.
+  </p>
+
+  <p>However, we have few data for countries found in North and South America. Hence any conclusions drawn 
+    must he handled with caution. Also, no data was found for African countries, possibly because few supercars
+    like this are sold there due to lower standard of living.
+  </p>
+
+  <p>Throughout the project, no major problems were faced when scrapping, handling, and visualising the data.
+    Minor problems like converting string variables to float variables and cleaning the data were dealt using
+    Python in Google Colab. The biggest problem I faced was that countries were often written differently in 
+    different websites, which posed a problem when trying to merge the data. Sometimes I dealt with this problem
+    by manually changing the names, while other times I used STATA to merge the data and see which countries did not 
+    match.
+  </p>
+</div>
+</div>
+
 </body>
   
 </html>
